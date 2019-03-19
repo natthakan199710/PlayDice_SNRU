@@ -31,7 +31,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Play Dice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Kt-GY-ujT">
                                 <rect key="frame" x="138.5" y="272" width="137.5" height="41"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="137.5" id="95B-qJ-iMg"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="137.5" id="95B-qJ-iMg"/>
                                     <constraint firstAttribute="height" constant="41" id="ft6-u7-Uag"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
@@ -65,15 +65,18 @@
                                 <rect key="frame" x="49" y="494" width="316" height="40"/>
                                 <color key="backgroundColor" red="0.84465640779999995" green="0.51457053419999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="316" id="Ac2-dF-5ei"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="316" id="Ac2-dF-5ei"/>
                                     <constraint firstAttribute="height" constant="40" id="rQb-SB-Xur"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <size key="titleShadowOffset" width="2" height="2"/>
-                                <state key="normal" title="Random Dice">
+                                <state key="normal" title="Ramdom Dice">
                                     <color key="titleColor" red="1" green="0.79376522400000005" blue="0.81149578369999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="titleShadowColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="ramdomDiceButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e3N-LL-fHq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -99,10 +102,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="firstDiceImageView" destination="cBR-hg-TdT" id="eu6-Qa-0oj"/>
+                        <outlet property="secondDiceImageView" destination="k8y-1f-nha" id="4DN-1J-K3N"/>
+                        <outlet property="thridDiceImageView" destination="giP-Hg-4US" id="H20-BM-zqf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="133.33333333333334" y="-37.5"/>
+            <point key="canvasLocation" x="594" y="-38"/>
         </scene>
     </scenes>
     <resources>
